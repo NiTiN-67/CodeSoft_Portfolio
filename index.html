@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nitin's Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/0426bf4c4f.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="#" class="logo">Port <span>Folio</span>.</a>
+
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="home" id="home">
+      <div class="social">
+        <a href="https://github.com/NiTiN-67" target="_blank" id="github"
+          ><i class="fa-brands fa-github fa-beat"></i
+        ></a>
+        <a href="#" id="linkedin"
+          ><i class="fa-brands fa-linkedin fa-beat"></i
+        ></a>
+        <a href="#" id="insta"
+          ><i class="fa-brands fa-instagram fa-beat"> </i
+        ></a>
+      </div>
+      <div class="home-img">
+        <img src="Resources/background.png" alt="" />
+      </div>
+      <div class="home-text">
+        <span>Hello, I'm</span>
+        <h1>Nitin Kumar</h1>
+        <h2>Frontend Developer</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
+          Porro voluptatem animi quod dolor inventore consectetur.
+        </p>
+        <a
+          href="/Resources/Nitin Resume.pdf"
+          download
+          class="btn btn-primary"
+          id="btn1"
+          >Download CV</a
+        >
+      </div>
+    </section>
+
+    <!-- ----------About---------- -->
+
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="Resources/background.png" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+              minus quibusdam cumque adipisci accusantium, officia harum
+              voluptate labore totam est culpa nulla voluptas fugiat doloremque
+              voluptates aspernatur neque? Ipsum molestiae qui optio voluptas
+              aperiam suscipit ipsam similique inventore delectus, mollitia
+              adipisci dolore possimus laboriosam eius asperiores consequatur
+              sunt amet illo?
+            </p>
+
+            <div class="tab-titles">
+              <p
+                class="tab-links active-link"
+                onclick="opentab('skills', event)"
+              >
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('education', event)">
+                Education
+              </p>
+              <p class="tab-links" onclick="opentab('experience', event)">
+                Experience
+              </p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Frontend Web Development</span><br />ReactJS, HTML, CSS
+                </li>
+                <li>
+                  <span>Backend Web Development</span><br />NodeJS, ExpressJS,
+                  MongoDb
+                </li>
+                <li>
+                  <span>Graphic Designing</span><br />Canva, Inkscape, Lightroom
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>2021 - Current</span><br />BTech from MSIT</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span
+                    >Content Head, Aarambh-The Dramatics Society of MSIT</span
+                  ><br />2022-23
+                </li>
+                <li>
+                  <span>Secretary, Aarambh-The Dramatics Society of MSIT</span
+                  ><br />2023-Current
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ----------Services---------- -->
+
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Frontend Web Development</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+              beatae vitae consequuntur quia ab eum quas.
+            </p>
+            <a href="">Learn More</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-server"></i>
+            <h2>Backend Web Development</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+              beatae vitae consequuntur quia ab eum quas.
+            </p>
+            <a href="">Learn More</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-crop-simple"></i>
+            <h2>Graphic Design</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+              beatae vitae consequuntur quia ab eum quas.
+            </p>
+            <a href="">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ----------Contact---------- -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i>nitin02kumar12@gmail.com
+            </p>
+            <p><i class="fa-solid fa-phone"></i>+91-9667507148</p>
+          </div>
+          <div class="contact-right">
+            <form action="">
+              <input
+                type="text"
+                name="Name"
+                placeholder="Your Name..."
+                required
+              />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your E-mail"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn-success" id="btn3">
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright © NiTiN. Made with <i class="fa-solid fa-heart fa-beat"></i></p>
+      </div>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname, event) {
+        for (var i = 0; i < tablinks.length; i++) {
+          tablinks[i].classList.remove("active-link");
+        }
+        for (var i = 0; i < tabcontents.length; i++) {
+          tabcontents[i].classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+  </body>
+</html>
